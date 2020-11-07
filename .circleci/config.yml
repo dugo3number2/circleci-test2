@@ -9,7 +9,7 @@ jobs:
     working_directory: ~/work
     steps:
       - checkout
-      - run: make
+      - run: gcc -o dump main.c
       - run: |
           # tell the operating system to remove the file size limit on core dump files 
           ulimit -c unlimited
