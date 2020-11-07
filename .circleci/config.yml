@@ -13,7 +13,7 @@ jobs:
       - run: |
           # tell the operating system to remove the file size limit on core dump files 
           ulimit -c unlimited
-          ./dump
+          ./main
       - run:
           command: |
             mkdir -p /tmp/dumps
